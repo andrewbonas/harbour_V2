@@ -1,28 +1,32 @@
 {
-    "name": "gatsby-starter-casual",
+    "name": "Harbour Health and Wellness",
     "version": "0.0.1",
-    "description": "Gatsby.js V2 starter template based on Casual by startbootstrap",
+    "description": "Counselling offices",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-casual.git"
+        "url": "https://harbourhealthwellness.ca"
     },
     "author": {
-        "name": "Anubhav Srivastava",
-        "email": "anubhav.srivastava00@gmail.com"
+        "name": "Andrew Bonas",
+        "email": "aabonas@hotmail.com"
     },
     "dependencies": {
-        "gatsby": "^2.20.2",
-        "gatsby-plugin-manifest": "^2.3.1",
-        "gatsby-plugin-offline": "^3.1.0",
-        "gatsby-plugin-react-helmet": "^3.2.0",
-        "gatsby-plugin-sass": "^2.2.0",
-        "node-sass": "^4.13.1",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "react-helmet": "^5.2.1",
-        "react-images": "^1.1.0",
-        "react-scrollspy": "^3.4.2",
-        "smoothscroll-polyfill": "^0.4.4"
+        "gatsby": "^3.5.1",
+        "gatsby-image": "^3.5.0",
+        "gatsby-plugin-manifest": "^3.5.0",
+        "gatsby-plugin-offline": "^4.5.1",
+        "gatsby-plugin-react-helmet": "^4.5.0",
+        "gatsby-plugin-sass": "^4.5.0",
+        "gatsby-plugin-sharp": "^3.5.0",
+        "gatsby-transformer-sharp": "^3.5.0",
+        "node-sass": "^6.0.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-helmet": "^6.1.0",
+        "react-images": "^1.1.7",
+        "react-scrollspy": "^3.4.3",
+        "smoothscroll-polyfill": "^0.4.4",
+        "trim": "^1.0.1"
     },
     "scripts": {
         "develop": "gatsby develop",
@@ -34,8 +38,8 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
-        "gh-pages": "^2.2.0",
-        "prettier": "^1.19.1",
+        "gh-pages": "^3.1.0",
+        "prettier": "^2.3.0",
         "rimraf": "^3.0.2"
     },
     "keywords": [
