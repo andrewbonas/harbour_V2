@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import { Link } from 'gatsby';
+
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -63,26 +64,38 @@ export default class Header extends Component {
               </li>
               <li
                 className={`nav-item px-lg-4 ${
-                  activeLink === 'products' ? 'active' : ''
+                  activeLink === 'providers' ? 'active' : ''
                 }`}
               >
-                <Link
+              <Link
                   className="nav-link text-uppercase text-expanded"
-                  to="/products"
+                  to="/providers"
                 >
-                  Products
+                  Providers
                 </Link>
               </li>
               <li
                 className={`nav-item px-lg-4 ${
-                  activeLink === 'store' ? 'active' : ''
+                  activeLink === 'office' ? 'active' : ''
                 }`}
               >
                 <Link
                   className="nav-link text-uppercase text-expanded"
-                  to="/store"
+                  to="/office"
                 >
-                  Store
+                  Office
+                </Link>
+              </li>
+              <li
+                className={`nav-item px-lg-4 ${
+                  activeLink === 'contact' ? 'active' : ''
+                }`}
+              >
+                <Link
+                  className="nav-link text-uppercase text-expanded"
+                  to="/contact"
+                >
+                  Contact Us
                 </Link>
               </li>
             </ul>

@@ -2,10 +2,10 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
-import about from '../assets/images/about.jpg';
+import about from '../assets/images/about.jpeg';
 
 const IndexPage = () => (
-  <Layout activeLink="store">
+  <Layout activeLink="contact">
     <section className="page-section cta">
       <div className="container">
         <div className="row">

@@ -2,9 +2,9 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
-import product1 from '../assets/images/products-01.jpg';
-import product2 from '../assets/images/products-02.jpg';
-import product3 from '../assets/images/products-03.jpg';
+import BIBfront from '../assets/images/BIBfront.jpeg';
+import Lobby from '../assets/images/Lobby.jpg';
+import OfficeRoom from '../assets/images/OfficeRoom.jpg';
 
 const IndexPage = () => (
   <Layout activeLink="products">
@@ -15,28 +15,24 @@ const IndexPage = () => (
             <div className="bg-faded p-5 d-flex ml-auto rounded">
               <h2 className="section-heading mb-0">
                 <span className="section-heading-upper">
-                  Blended to Perfection
+                Comfort
                 </span>
                 <span className="section-heading-lower">
-                  Coffees &amp; Teas
+                  Lorem &amp; Ipsum
                 </span>
               </h2>
             </div>
           </div>
           <img
             className="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
-            src={product1}
+            src={BIBfront}
             alt=""
           />
           <div className="product-item-description d-flex mr-auto">
             <div className="bg-faded p-5 rounded">
               <p className="mb-0">
-                We take pride in our work, and it shows. Every time you order a
-                beverage from us, we guarantee that it will be an experience
-                worth having. Whether it's our world famous Venezuelan
-                Cappuccino, a refreshing iced herbal tea, or something as simple
-                as a cup of speciality sourced black coffee, you will be coming
-                back for more.
+                Enjoy our comfortable, quiet environment while you wait for your session.
+                Complementary coffee, tea and water is always available.
               </p>
             </div>
           </div>
@@ -51,26 +47,24 @@ const IndexPage = () => (
             <div className="bg-faded p-5 d-flex mr-auto rounded">
               <h2 className="section-heading mb-0">
                 <span className="section-heading-upper">
-                  Delicious Treats, Good Eats
+                  Professional
                 </span>
                 <span className="section-heading-lower">
-                  Bakery &amp; Kitchen
+                  Lorem &amp; Ipsum
                 </span>
               </h2>
             </div>
           </div>
           <img
             className="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
-            src={product2}
+            src={Lobby}
             alt=""
           />
           <div className="product-item-description d-flex ml-auto">
             <div className="bg-faded p-5 rounded">
               <p className="mb-0">
-                Our seasonal menu features delicious snacks, baked goods, and
-                even full meals perfect for breakfast or lunchtime. We source
-                our ingredients from local, oragnic farms whenever possible,
-                alongside premium vendors for specialty goods.
+               Newly improved noise-reduced rooms ensures your privacy so you can be assured of a space designed with your emotional security.
+               Your comfort and ease of mind is our utmost concern.
               </p>
             </div>
           </div>
@@ -85,27 +79,23 @@ const IndexPage = () => (
             <div className="bg-faded p-5 d-flex ml-auto rounded">
               <h2 className="section-heading mb-0">
                 <span className="section-heading-upper">
-                  From Around the World
+                  Centrally Located
                 </span>
                 <span className="section-heading-lower">
-                  Bulk Speciality Blends
+                  Lorem Ipsum
                 </span>
               </h2>
             </div>
           </div>
           <img
             className="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
-            src={product3}
+            src={OfficeRoom}
             alt=""
           />
           <div className="product-item-description d-flex mr-auto">
             <div className="bg-faded p-5 rounded">
               <p className="mb-0">
-                Travelling the world for the very best quality coffee is
-                something take pride in. When you visit us, you'll always find
-                new blends from around the world, mainly from regions in Central
-                and South America. We sell our blends in smaller to large bulk
-                quantities. Please visit us in person for more details.
+                Easy access from Highway #1, Lougheed Highway and Brunette Avenue. We are just east of Lougheed Mall.
               </p>
             </div>
           </div>

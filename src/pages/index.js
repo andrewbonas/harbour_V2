@@ -1,8 +1,7 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
-
 import intro from '../assets/images/intro.jpg';
+
 const IndexPage = () => (
   <Layout activeLink="home">
     <section className="page-section clearfix">
@@ -25,8 +24,8 @@ const IndexPage = () => (
               guarantee it!
             </p>
             <div className="intro-button mx-auto">
-              <a className="btn btn-primary btn-xl" href="/#">
-                Visit Us Today!
+              <a className="btn btn-primary btn-xl" href="/contact">
+                Contact Us Today!
               </a>
             </div>
           </div>

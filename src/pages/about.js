@@ -1,8 +1,7 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
+import about from '../assets/images/about.jpeg';
 
-import about from '../assets/images/about.jpg';
 const IndexPage = () => (
   <Layout activeLink="about">
     <section className="page-section about-heading">
@@ -18,9 +17,9 @@ const IndexPage = () => (
               <div className="bg-faded rounded p-5">
                 <h2 className="section-heading mb-4">
                   <span className="section-heading-upper">
-                    Strong Coffee, Strong Roots
+                    Providing a Healthy Environment
                   </span>
-                  <span className="section-heading-lower">About Our Cafe</span>
+                  <span className="section-heading-lower">About Our Office Space</span>
                 </h2>
                 <p>
                   Founded in 1987 by the Hernandez brothers, our establishment
