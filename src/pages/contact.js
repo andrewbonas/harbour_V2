@@ -1,10 +1,16 @@
 import React from 'react';
-
+import { useForm } from 'react-hook-form';
 import Layout from '../components/Layout';
 
-import about from '../assets/images/about.jpeg';
+const IndexPage = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
-const IndexPage = () => (
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
+  
+  return(
   <Layout activeLink="contact">
     <section className="page-section cta">
       <div className="container">
@@ -12,97 +18,92 @@ const IndexPage = () => (
           <div className="col-xl-9 mx-auto">
             <div className="cta-inner text-center rounded">
               <h2 className="section-heading mb-5">
-                <span className="section-heading-upper">Come On In</span>
-                <span className="section-heading-lower">We're Open</span>
+                <span className="section-heading-upper">Reach Out</span>
+                <span className="section-heading-lower">Contact Us</span>
               </h2>
-              <ul className="list-unstyled list-hours mb-5 text-left mx-auto">
-                <li className="list-unstyled-item list-hours-item d-flex">
-                  Sunday
-                  <span className="ml-auto">Closed</span>
-                </li>
-                <li className="list-unstyled-item list-hours-item d-flex">
-                  Monday
-                  <span className="ml-auto">7:00 AM to 8:00 PM</span>
-                </li>
-                <li className="list-unstyled-item list-hours-item d-flex">
-                  Tuesday
-                  <span className="ml-auto">7:00 AM to 8:00 PM</span>
-                </li>
-                <li className="list-unstyled-item list-hours-item d-flex">
-                  Wednesday
-                  <span className="ml-auto">7:00 AM to 8:00 PM</span>
-                </li>
-                <li className="list-unstyled-item list-hours-item d-flex">
-                  Thursday
-                  <span className="ml-auto">7:00 AM to 8:00 PM</span>
-                </li>
-                <li className="list-unstyled-item list-hours-item d-flex">
-                  Friday
-                  <span className="ml-auto">7:00 AM to 8:00 PM</span>
-                </li>
-                <li className="list-unstyled-item list-hours-item d-flex">
-                  Saturday
-                  <span className="ml-auto">9:00 AM to 5:00 PM</span>
-                </li>
-              </ul>
-              <p className="address mb-5">
-                <em>
-                  <strong>1116 Orchard Street</strong>
-                  <br />
-                  Golden Valley, Minnesota
-                </em>
-              </p>
-              <p className="mb-0">
-                <small>
-                  <em>Call Anytime</em>
-                </small>
-                <br />
-                (317) 585-8468
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section className="page-section about-heading">
-      <div className="container">
-        <img
-          className="img-fluid rounded about-heading-img mb-3 mb-lg-0"
-          src={about}
-          alt=""
-        />
-        <div className="about-heading-content">
-          <div className="row">
-            <div className="col-xl-9 col-lg-10 mx-auto">
-              <div className="bg-faded rounded p-5">
-                <h2 className="section-heading mb-4">
-                  <span className="section-heading-upper">
-                    Strong Coffee, Strong Roots
-                  </span>
-                  <span className="section-heading-lower">About Our Cafe</span>
-                </h2>
-                <p>
-                  Founded in 1987 by the Hernandez brothers, our establishment
-                  has been serving up rich coffee sourced from artisan farmers
-                  in various regions of South and Central America. We are
-                  dedicated to travelling the world, finding the best coffee,
-                  and bringing back to you here in our cafe.
-                </p>
-                <p className="mb-0">
-                  We guarantee that you will fall in
-                  <em>lust</em>
-                  with our decadent blends the moment you walk inside until you
-                  finish your last sip. Join us for your daily routine, an
-                  outing with friends, or simply just to enjoy some alone time.
-                </p>
+              {/*Section: Contact v.2*/}
+      <section className="mb-4">
+        {/*Section description*/}
+        <p className="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+          a matter of hours to help you.</p>
+        <div className="row">
+          {/*Grid column*/}
+          <div className="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" onSubmit={handleSubmit(onSubmit)}>
+              {/*Grid row*/}
+              <div className="row">
+                {/*Grid column*/}
+                <div className="col-md-6">
+                  <div className="md-form mb-0">
+                    <input type="text" id="name" name="name" className="form-control" {...register('name', { required: true })} />
+                    <label htmlFor="name" className>Your name</label>
+                  </div>
+                </div>
+                {/*Grid column*/}
+                {/*Grid column*/}
+                <div className="col-md-6">
+                  <div className="md-form mb-0">
+                    <input type="text" id="email" name="email" className="form-control" {...register('email', { required: true })} />
+                    <label htmlFor="email" className>Your email</label>
+                  </div>
+                </div>
+                {/*Grid column*/}
               </div>
+              {/*Grid row*/}
+              {/*Grid row*/}
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="md-form mb-0">
+                    <input type="text" id="subject" name="subject" className="form-control" {...register('subject', { required: true })} />
+                    <label htmlFor="subject" className>Subject</label>
+                  </div>
+                </div>
+              </div>
+              {/*Grid row*/}
+              {/*Grid row*/}
+              <div className="row">
+                {/*Grid column*/}
+                <div className="col-md-12">
+                  <div className="md-form">
+                    <textarea type="text" id="message" name="message" rows={7} className="form-control md-textarea" defaultValue={""} {...register('message', { required: true })} />
+                    <label htmlFor="message">Your message</label>
+                  </div>
+                </div>
+              </div>
+              {/*Grid row*/}
+            
+            <div className="text-center text-md-left">
+              <button type="submit" className="btn btn-primary" >Send</button>
+            </div>
+            </form>
+            <div className="status" id="status" />
+          </div>
+          {/*Grid column*/}
+          {/*Grid column*/}
+          <div className="col-md-3 text-center">
+            <ul className="list-unstyled mb-0">
+              <li><i className="fas fa-map-marker-alt fa-2x" />
+                <p>205-1070 Ridgeway Avenue, Coquitlam, BC, V3J 1S7</p>
+              </li>
+              <li><i className="fas fa-phone mt-4 fa-2x" />
+                <p>778-668-4176</p>
+              </li>
+              <li><i className="fas fa-envelope mt-4 fa-2x" />
+                <p>selfmatterscounselling<br />@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          {/*Grid column*/}
+        </div>
+      </section>
             </div>
           </div>
         </div>
       </div>
     </section>
+      
   </Layout>
-);
 
+);
+};
 export default IndexPage;

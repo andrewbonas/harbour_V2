@@ -7,7 +7,7 @@ import Lobby from '../assets/images/Lobby.jpg';
 import OfficeRoom from '../assets/images/OfficeRoom.jpg';
 
 const IndexPage = () => (
-  <Layout activeLink="products">
+  <Layout activeLink="providers">
     <section className="page-section">
       <div className="container">
         <div className="product-item">
