@@ -11,6 +11,8 @@
         "email": "aabonas@hotmail.com"
     },
     "dependencies": {
+        "axios": "^0.21.1",
+        "emailjs-com": "^2.6.4",
         "gatsby": "^3.5.1",
         "gatsby-image": "^3.5.0",
         "gatsby-plugin-manifest": "^3.5.0",
