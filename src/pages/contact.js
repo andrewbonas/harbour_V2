@@ -5,7 +5,8 @@ import Layout from '../components/Layout';
 const IndexPage = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data, e) => {
+    e.preventDefault();
     console.log(data);
   };
 
@@ -35,16 +36,20 @@ const IndexPage = () => {
                 {/*Grid column*/}
                 <div className="col-md-6">
                   <div className="md-form mb-0">
+                  <label htmlFor="name" className="d-flex ml-2">Name:</label>
                     <input type="text" id="name" name="name" className="form-control" {...register('name', { required: true })} />
-                    <label htmlFor="name" className>Your name</label>
+                    {errors.name && <p className="text-danger">Name is Required</p>}
+
                   </div>
                 </div>
                 {/*Grid column*/}
                 {/*Grid column*/}
                 <div className="col-md-6">
                   <div className="md-form mb-0">
+                  <label htmlFor="email" className="d-flex ml-2">Email:</label>
                     <input type="text" id="email" name="email" className="form-control" {...register('email', { required: true })} />
-                    <label htmlFor="email" className>Your email</label>
+                    {errors.email && <p className="text-danger">Email is Required</p>}
+
                   </div>
                 </div>
                 {/*Grid column*/}
@@ -54,8 +59,9 @@ const IndexPage = () => {
               <div className="row">
                 <div className="col-md-12">
                   <div className="md-form mb-0">
+                  <label htmlFor="subject" className="d-flex ml-2">Subject:</label>
                     <input type="text" id="subject" name="subject" className="form-control" {...register('subject', { required: true })} />
-                    <label htmlFor="subject" className>Subject</label>
+                      {errors.subject && <p className="text-danger">Subject is Required</p>}
                   </div>
                 </div>
               </div>
@@ -65,15 +71,17 @@ const IndexPage = () => {
                 {/*Grid column*/}
                 <div className="col-md-12">
                   <div className="md-form">
+                  <label htmlFor="message" className="d-flex ml-2">Message:</label>
                     <textarea type="text" id="message" name="message" rows={7} className="form-control md-textarea" defaultValue={""} {...register('message', { required: true })} />
-                    <label htmlFor="message">Your message</label>
+                    {errors.message && <p className="text-danger">Message is Required</p>}
+
                   </div>
                 </div>
               </div>
               {/*Grid row*/}
             
             <div className="text-center text-md-left">
-              <button type="submit" className="btn btn-primary" >Send</button>
+              <button type="submit" className="btn btn-primary m-2" >Send</button>
             </div>
             </form>
             <div className="status" id="status" />
