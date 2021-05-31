@@ -183,9 +183,7 @@ const IndexPage = () => {
                         <li>
                           <i className="fas fa-envelope mt-4 fa-2x" />
                           <p>
-                            selfmatterscounselling
-                            <br />
-                            @gmail.com
+                            selfmatterscounselling @gmail.com
                           </p>
                         </li>
                       </ul>
