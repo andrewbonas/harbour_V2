@@ -1,9 +1,7 @@
 
-
 .provider-btn {
   position: absolute; 
   top: 50%; 
-  left: 37%;
   z-index: 2;
   background-color: $secondary;
   border: $white 1px;
@@ -13,8 +11,7 @@
   
   &:hover {
     filter: brightness(110%);
-color: $white;
-
+    color: $white;
  }
 }
 
@@ -22,7 +19,6 @@ color: $white;
    position: relative;
 
    &:hover > .overlay {
-  position: relative;
   transform: translateY(-4px);
   background-color: black;
   -webkit-transition: all 1s ease;

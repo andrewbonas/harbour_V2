@@ -15,14 +15,14 @@ const IndexPage = () => {
   <Layout activeLink="providers">
     <div className="row m-2">
     <section className="page-section provider-card col-lg-4">
-      <div className="overlay">
-      <div className="container bg-faded rounded card" onMouseOver={() => setHoverOne(true)}
+      <div className="overlay rounded">
+      <div className="bg-faded rounded card" onMouseOver={() => setHoverOne(true)}
       onMouseLeave={() => setHoverOne(false)}>
         {isHoveredOne && (
-        <button className="btn provider-btn btn-lg"
+        <a href="https://www.braininbalance.ca/" target="_blank" className="btn provider-btn btn-lg align-self-center text-white"
         >
           Visit Site
-        </button>
+        </a>
       )}
         <div className="product-item">
           <div className="product-item-title d-flex">
@@ -57,14 +57,14 @@ const IndexPage = () => {
     </section>
 
     <section className="page-section provider-card col-lg-4">
-      <div className="overlay">
-      <div className="container bg-faded rounded card" onMouseOver={() => setHoverTwo(true)}
+      <div className="overlay rounded">
+      <div className="bg-faded rounded card" onMouseOver={() => setHoverTwo(true)}
       onMouseLeave={() => setHoverTwo(false)}>
         {isHoveredTwo && (
-        <button className="btn provider-btn btn-lg"
+        <a href="https://www.braininbalance.ca/" target="_blank" className="btn provider-btn btn-lg align-self-center text-white"
         >
           Visit Site
-        </button>
+        </a>
       )}
         <div className="product-item">
           <div className="product-item-title d-flex">
@@ -99,14 +99,14 @@ const IndexPage = () => {
     </section>
 
     <section className="page-section provider-card col-lg-4">
-      <div className="overlay">
-      <div className="container bg-faded rounded card" onMouseOver={() => setHoverThree(true)}
+      <div className="overlay rounded">
+      <div className="bg-faded rounded card" onMouseOver={() => setHoverThree(true)}
       onMouseLeave={() => setHoverThree(false)}>
         {isHoveredThree && (
-        <button className="btn provider-btn btn-lg"
+        <a href="https://www.braininbalance.ca/" target="_blank" className="btn provider-btn btn-lg align-self-center text-white"
         >
           Visit Site
-        </button>
+        </a>
       )}
         <div className="product-item">
           <div className="product-item-title d-flex">
