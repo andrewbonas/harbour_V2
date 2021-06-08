@@ -11,7 +11,6 @@ const IndexPage = () => {
   const [isHoveredTwo, setHoverTwo] = useState(false);
   const [isHoveredThree, setHoverThree] = useState(false);
 
-
   return (
   <Layout activeLink="providers">
     <div className="row m-2">

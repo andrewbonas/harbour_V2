@@ -7,7 +7,6 @@ module.exports = {
   manifestThemeColor: '#F7F7F9',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-casual/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Harbour Health and Wellness',
-  subHeading: '.',
+  // pathPrefix: `/gatsby-starter-casual/`, // This path is subpath of your hosting https://domain/portfolio
+  heading: 'Harbour Health and Wellness'
 };
