@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
 import Layout from '../components/Layout';
-import SelfLogo from '../assets/images/selfmatter.webp';
-import BIBlogo from '../assets/images/bib.jpeg';
+import selfLogo from '../assets/images/selfMatter.png';
+import bibLogo from '../assets/images/bib.jpeg';
+import rentLogo from '../assets/images/rentLogo.png';
+
 
 
 
@@ -38,8 +40,8 @@ const IndexPage = () => {
             </div>
           </div>
           <img
-            className="product-item-img mx-auto d-flex rounded mb-3 mb-lg-0"
-            src={BIBlogo}
+            className="bib-item-img mx-auto d-flex rounded mb-3 mb-lg-0"
+            src={bibLogo}
             alt=""
           />
           <div className="product-item-description d-flex align-self-center w-100">
@@ -61,7 +63,7 @@ const IndexPage = () => {
       <div className="bg-faded rounded card" onMouseOver={() => setHoverTwo(true)}
       onMouseLeave={() => setHoverTwo(false)}>
         {isHoveredTwo && (
-        <a href="https://www.braininbalance.ca/" target="_blank" className="btn provider-btn btn-lg align-self-center text-white"
+        <a href="https://www.selfmatters.ca/" target="_blank" className="btn provider-btn btn-lg align-self-center text-white"
         >
           Visit Site
         </a>
@@ -74,14 +76,14 @@ const IndexPage = () => {
                 Comfort
                 </span>
                 <span className="section-heading-lower">
-                  Brain in Balance
+                  Self Matters Counselling
                 </span>
               </h2>
             </div>
           </div>
           <img
-            className="product-item-img mx-auto d-flex rounded mb-3 mb-lg-0"
-            src={BIBlogo}
+            className="self-item-img mx-auto d-flex rounded mb-3 mb-lg-0"
+            src={selfLogo}
             alt=""
           />
           <div className="product-item-description d-flex align-self-center w-100">
@@ -103,9 +105,9 @@ const IndexPage = () => {
       <div className="bg-faded rounded card" onMouseOver={() => setHoverThree(true)}
       onMouseLeave={() => setHoverThree(false)}>
         {isHoveredThree && (
-        <a href="https://www.braininbalance.ca/" target="_blank" className="btn provider-btn btn-lg align-self-center text-white"
+        <a href="/contact" className="btn provider-btn btn-lg align-self-center text-white"
         >
-          Visit Site
+          Contact Us
         </a>
       )}
         <div className="product-item">
@@ -116,14 +118,14 @@ const IndexPage = () => {
                 Comfort
                 </span>
                 <span className="section-heading-lower">
-                  Brain in Balance
+                  Room Rentals
                 </span>
               </h2>
             </div>
           </div>
           <img
-            className="product-item-img mx-auto d-flex rounded mb-3 mb-lg-0"
-            src={BIBlogo}
+            className="rental-item-img mx-auto d-flex rounded mb-3 mb-lg-0"
+            src={rentLogo}
             alt=""
           />
           <div className="product-item-description d-flex align-self-center w-100">

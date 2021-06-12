@@ -2,7 +2,7 @@ body {
   @include body-font;
   background-image: linear-gradient(
       rgba(33, 37, 41, 0.3),
-      rgba(33, 37, 41, 0.3)
+      rgba(139, 147, 155, 0.3)
     ),
     url('../images/bg.jpg');
   background-attachment: fixed;
