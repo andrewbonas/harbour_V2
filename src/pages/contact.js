@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { init, sendForm, watch } from 'emailjs-com';
+import { init, sendForm } from 'emailjs-com';
 import Layout from '../components/Layout';
 init('user_k97ZHtGLHLXgxpguh0ago');
 

@@ -18,10 +18,12 @@ const IndexPage = () => {
     <div className="row m-2">
     <section className="page-section provider-card col-lg-4">
       <div className="overlay rounded">
-      <div className="bg-faded rounded card" onMouseOver={() => setHoverOne(true)}
-      onMouseLeave={() => setHoverOne(false)}>
+      <div className="bg-faded rounded card" role="button" tabIndex={0} onMouseOver={() => setHoverOne(true)}
+      onFocus={() => setHoverOne(true)}
+      onMouseLeave={() => setHoverOne(false)}
+      onBlur={() => setHoverOne(false)}>
         {isHoveredOne && (
-        <a href="https://www.braininbalance.ca/" target="_blank" className="btn provider-btn btn-lg align-self-center text-white"
+        <a href="https://www.braininbalance.ca/" target="_blank" rel="noreferrer" className="btn provider-btn btn-lg align-self-center text-white"
         >
           Visit Site
         </a>
@@ -60,10 +62,12 @@ const IndexPage = () => {
 
     <section className="page-section provider-card col-lg-4">
       <div className="overlay rounded">
-      <div className="bg-faded rounded card" onMouseOver={() => setHoverTwo(true)}
-      onMouseLeave={() => setHoverTwo(false)}>
+      <div className="bg-faded rounded card" role="button" tabIndex={0} onMouseOver={() => setHoverTwo(true)}
+       onFocus={() => setHoverTwo(true)}
+       onMouseLeave={() => setHoverTwo(false)}
+       onBlur={() => setHoverTwo(false)}>
         {isHoveredTwo && (
-        <a href="https://www.selfmatters.ca/" target="_blank" className="btn provider-btn btn-lg align-self-center text-white"
+        <a href="https://www.selfmatters.ca/" target="_blank" rel="noreferrer" className="btn provider-btn btn-lg align-self-center text-white"
         >
           Visit Site
         </a>
@@ -102,10 +106,12 @@ const IndexPage = () => {
 
     <section className="page-section provider-card col-lg-4">
       <div className="overlay rounded">
-      <div className="bg-faded rounded card" onMouseOver={() => setHoverThree(true)}
-      onMouseLeave={() => setHoverThree(false)}>
+      <div className="bg-faded rounded card" role="button" tabIndex={0} onMouseOver={() => setHoverThree(true)}
+       onFocus={() => setHoverThree(true)}
+       onMouseLeave={() => setHoverThree(false)}
+       onBlur={() => setHoverThree(false)}>
         {isHoveredThree && (
-        <a href="/contact" className="btn provider-btn btn-lg align-self-center text-white"
+        <a role="button" href="/contact" className="btn provider-btn btn-lg align-self-center text-white"
         >
           Contact Us
         </a>
