@@ -1,15 +1,13 @@
 #mainNav {
-  background-color: fade-out($secondary, 0.1);
   @include heading-font;
   .navbar-brand {
-    color: $primary;
+    //color: $primary;
   }
   .navbar-nav {
     .nav-item {
       .nav-link {
         color: fade-out($white, 0.3);
-
-        font-weight: 800;
+        font-weight: 500;
       }
       &.active {
         .nav-link {
@@ -20,9 +18,14 @@
   }
   @media (min-width: 992px) {
     .navbar-nav {
+      font-size: 0.9rem;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      text-align:  center;
       .nav-item {
         .nav-link {
           font-size: 0.9rem;
+          
           &:hover {
             color: fade-out($white, 0.6);
           }

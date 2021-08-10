@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Harbour Health and Wellness', // <title>
+  siteTitle: 'Harbour Health & Wellness', // <title>
   manifestName: 'Harbour Health',
   manifestShortName: 'Harbour', // max 12 characters
   manifestStartUrl: '/',
@@ -8,5 +8,5 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   // pathPrefix: `/gatsby-starter-casual/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Harbour Health and Wellness'
+  heading: 'Harbour Health & Wellness'
 };

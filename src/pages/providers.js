@@ -18,10 +18,10 @@ const IndexPage = () => {
     <div className="row m-2">
     <section className="page-section provider-card col-lg-4">
       <div className="overlay rounded">
-      <div className="bg-faded rounded card" onMouseOver={() => setHoverOne(true)}
+      <div className="bg-faded rounded card" role="button" onMouseOver={() => setHoverOne(true)}
       onMouseLeave={() => setHoverOne(false)}>
         {isHoveredOne && (
-        <a href="https://www.braininbalance.ca/" target="_blank" className="btn provider-btn btn-lg align-self-center text-white"
+        <a href="https://www.braininbalance.ca/" target="_blank" rel="noreferrer" className="btn provider-btn btn-lg align-self-center text-white"
         >
           Visit Site
         </a>
@@ -60,10 +60,10 @@ const IndexPage = () => {
 
     <section className="page-section provider-card col-lg-4">
       <div className="overlay rounded">
-      <div className="bg-faded rounded card" onMouseOver={() => setHoverTwo(true)}
+      <div className="bg-faded rounded card" role="button" onMouseOver={() => setHoverTwo(true)}
       onMouseLeave={() => setHoverTwo(false)}>
         {isHoveredTwo && (
-        <a href="https://www.selfmatters.ca/" target="_blank" className="btn provider-btn btn-lg align-self-center text-white"
+        <a href="https://www.selfmatters.ca/" target="_blank" rel="noreferrer" className="btn provider-btn btn-lg align-self-center text-white"
         >
           Visit Site
         </a>
@@ -102,7 +102,7 @@ const IndexPage = () => {
 
     <section className="page-section provider-card col-lg-4">
       <div className="overlay rounded">
-      <div className="bg-faded rounded card" onMouseOver={() => setHoverThree(true)}
+      <div className="bg-faded rounded card" role="button" onMouseOver={() => setHoverThree(true)}
       onMouseLeave={() => setHoverThree(false)}>
         {isHoveredThree && (
         <a href="/contact" className="btn provider-btn btn-lg align-self-center text-white"

@@ -17,7 +17,7 @@ export default class Header extends Component {
     const { openMenu } = this.state;
     const { activeLink } = this.props;
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <nav className="navbar navbar-expand-lg navbar-dark pt-5" id="mainNav">
         <div className="container">
           <a
             className="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none"
